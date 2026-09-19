@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  QUICK EDIT GUIDE — replace these before you deploy:
+  1. "[Your College Name]"      → your college's name (search this file)
+  2. Stats in #about            → your chapter's real member/event counts
+  3. Contact email & socials    → in the footer, at the bottom
+  4. Team section               → add your actual office bearers if asked
+  Everything else can stay as-is; it's written to be true of any
+  IEEE RAS student chapter and only needs your specifics dropped in.
+  ============================================================
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IEEE RAS — Student Chapter</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"></span>
+      IEEE RAS <span class="mono" style="color:var(--muted); font-weight:400;">/ [Your College Name]</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#focus">Focus Areas</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#join">Join</a></li>
+    </ul>
+    <a class="nav-cta" href="#join">Apply to join</a>
+    <button class="nav-toggle mono" aria-label="Toggle navigation" id="navToggle">≡</button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap" style="border-top:none;">
+    <div>
+      <h1>Where circuits<br>learn to move.</h1>
+      <p>IEEE RAS is the student chapter for robotics and automation — we design autonomous
+      systems, run hands-on build sessions, and send teams to national competitions.
+      No prior robotics experience required; just curiosity and a willingness to solder
+      something at 11pm before a deadline.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#join">Apply to join</a>
+        <a class="btn btn-ghost" href="#focus">See what we build</a>
+      </div>
+    </div>
+
+    <div class="circuit-box" aria-hidden="true">
+      <svg viewBox="0 0 300 300">
+        <path class="trace" d="M20 40 H120 V100 H220 V60 H280" />
+        <path class="trace" d="M20 150 H90 V220 H180 V150 H260 V190" />
+        <path class="trace" d="M40 260 H130 V190 H200" />
+        <path class="trace-lit" d="M20 40 H120 V100 H220 V60 H280" />
+        <path class="trace-lit" d="M20 150 H90 V220 H180 V150 H260 V190" style="animation-delay:1.1s" />
+        <path class="trace-lit" d="M40 260 H130 V190 H200" style="animation-delay:2s" />
+        <circle class="node" cx="20" cy="40" r="5" />
+        <circle class="node node-lit" cx="220" cy="100" r="5" />
+        <circle class="node" cx="280" cy="60" r="5" />
+        <circle class="node" cx="90" cy="150" r="5" />
+        <circle class="node node-lit" cx="180" cy="220" r="5" />
+        <circle class="node" cx="260" cy="190" r="5" />
+        <circle class="node" cx="130" cy="260" r="5" />
+        <circle class="node" cx="200" cy="190" r="5" />
+      </svg>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-tag mono">01 — ABOUT</div>
+          <h2>A chapter, not a club.</h2>
+          <p class="lede">Part of the IEEE Robotics &amp; Automation Society, a global professional
+          body of over 13,000 members. Locally, we're a group of students who'd rather build the
+          thing than just read about it — connecting members with faculty, lab space, and
+          working engineers along the way.</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>120+</b><span>Active members</span></div>
+        <div class="stat"><b>15</b><span>Workshops / year</span></div>
+        <div class="stat"><b>8</b><span>Competitions entered</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="focus">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-tag mono">02 — FOCUS AREAS</div>
+          <h2>What we actually work on.</h2>
+        </div>
+      </div>
+      <div class="grid-4">
+        <div class="panel card">
+          <div class="card-index">A1</div>
+          <h3>Autonomous Systems</h3>
+          <p>Line-followers, obstacle-avoidance bots, and the control theory that makes them
+          not crash into walls.</p>
+        </div>
+        <div class="panel card">
+          <div class="card-index">A2</div>
+          <h3>Competitive Robotics</h3>
+          <p>All-terrain rovers and combat bots, built for national-level student
+          competitions.</p>
+        </div>
+        <div class="panel card">
+          <div class="card-index">A3</div>
+          <h3>Workshops &amp; Bootcamps</h3>
+          <p>Microcontrollers, embedded C, and ROS basics — taught by senior members, not
+          slides alone.</p>
+        </div>
+        <div class="panel card">
+          <div class="card-index">A4</div>
+          <h3>Industry &amp; Research Links</h3>
+          <p>Guest lectures, lab visits, and mentorship from faculty and working robotics
+          engineers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-tag mono">03 — PROGRAMS</div>
+          <h2>Flagship events.</h2>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="panel program">
+          <div class="program-meta">SEMESTER · NEW MEMBERS</div>
+          <h3>Build Week</h3>
+          <p>A multi-day sprint where new members build their first working robot from a kit,
+          mentored one-on-one by seniors.</p>
+        </div>
+        <div class="panel program">
+          <div class="program-meta">ANNUAL · OPEN COMPETITION</div>
+          <h3>Robotics Meet</h3>
+          <p>Our open annual competition — line-following, maze-solving, and battle-bot
+          categories, open to other chapters too.</p>
+        </div>
+        <div class="panel program">
+          <div class="program-meta">ONGOING · TALKS</div>
+          <h3>Guest Lecture Series</h3>
+          <p>Researchers and industry engineers on what's actually changing in robotics and
+          automation right now.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-tag mono">04 — JOIN</div>
+          <h2>How to get in.</h2>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div>
+            <h3>Submit the interest form</h3>
+            <p>Tell us which track you want — autonomous systems, competitive robotics, or
+            you're still deciding. That's fine too.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>Attend orientation</h3>
+            <p>Meet the chapter, your track lead, and the mentors who'll actually be answering
+            your 11pm debugging messages.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>Pick your first build</h3>
+            <p>Join an existing team, or pitch an independent project with mentor support
+            behind it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-ctas" style="margin-top:8px;">
+        <a class="btn btn-primary" href="mailto:ieee.ras@yourcollege.edu">Apply to join</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="brand mono" style="font-size:0.95rem;">IEEE RAS / [Your College Name]</div>
+      <ul class="foot-links">
+        <li><a href="mailto:ieee.ras@yourcollege.edu">Email</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+    <p class="foot-note">IEEE RAS is a student chapter of the IEEE Robotics &amp; Automation
+    Society. This site is maintained by chapter members — replace the placeholders above with
+    your chapter's real contact details before sharing this link.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
